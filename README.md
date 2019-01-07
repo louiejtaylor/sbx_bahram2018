@@ -22,7 +22,7 @@ You'll want a Kraken database to query--see the [Kraken documentation](http://cc
 
 Since the Bahram 2018 data is available through NCBI SRA, all you need to do is pass the SRA project identifier to `sunbeam init`:
 
-    sunbeam init Bahram2018 --data_acc SRP057027
+    sunbeam init Bahram2018 --data_acc ERP020652
     
 And then run Sunbeam, specifying `bahram_report` as the target rule:
 
