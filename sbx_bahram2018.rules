@@ -1,0 +1,9 @@
+rule bahram_report:
+    input:
+        kraken = str(CLASSIFY_FP/'kraken'/'all_samples.tsv')
+    output:
+        str(Cfg['all']['output_fp']/'reports/Bahram2018_Report.html')
+    params:
+        metadata_file = str(sunbeam_dir + '/extensions/sbx_bahram2018/metadata/metadata_with_SRR.csv')
+    script:
+        sunbeam_dir + '/extensions/sbx_bahram2018/scripts/Bahram2018_Report.Rmd'
