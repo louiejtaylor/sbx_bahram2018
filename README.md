@@ -26,5 +26,5 @@ Since the Bahram 2018 data is available through NCBI SRA, all you need to do is 
     
 And then run Sunbeam, specifying `bahram_report` as the target rule:
 
-    sunbeam run --configfile Bahram2018 --cores 20 bahram_report
+    sunbeam run --configfile sunbeam_config.yml --cores 20 bahram_report
     
